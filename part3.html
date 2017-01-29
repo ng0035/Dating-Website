@@ -1,0 +1,77 @@
+<DOCTYPE! html>
+<html>
+
+<head>
+<title>DATING WEBSITE!</title>
+<meta name="author" content="Nikita Gupta">
+<link href="style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<h2>Please Enter Your Details For Our Dating Website!</h2>
+<form action="destination.php" method="post"  enctype="multipart/form-data">
+
+<fieldset class="fs">
+         <legend>Your Face</legend>
+                <label for="preview">Your image: </label>
+                      <input type="file" id="preview" name="preview">
+                      
+					   <br>
+                       image preview: 
+</fieldset>
+
+<fieldset class="fs">
+         <legend>Your General Details</legend>
+                 <label class="l" for="name">Name: </label>
+                       <input type="text" id="name" name="name"  placeholder="Your Full Name" required><br>
+                 <label class="cr" for="gender">Gender: </label>
+                       <input type="radio" id="gender" name="gender" value="Male" required>  Male 
+                       <input type="radio" id="gender" name="gender" value="Female" required> Female<br>
+                 <label class="l" for="age">Age: </label>
+                       <input type="number" id="age" name="age" min="18" step="1" value="18" required><br>
+                 <label class="l" for="dob">Date Of Birth: </label>
+                       <input type="date" id="dob" name="dob" ><br>
+                 <label class="l" for="color">Favourite Color: </label>
+                       <input type="color" name="color" id="color"><br>
+                 <label class="l" for="country">Which country: </label>
+                       <select name="country">
+                              <option value="no selection" name="null">               </option>
+							  <option value="India" name="india">India</option>
+                              <option value="USA" name="usa">USA</option>
+                              <option value="australia" name="australia">Australia</option>
+                              <option value="France" name="france">France</option>
+                              <option value="Switzerland" name="switzerland">Switzerland</option><br>
+					   </select>
+
+</fieldset>
+
+
+<fieldset class="fs">
+          <legend>Your Indicators</legend>
+		         <label class=" l" for="height">Height: </label>
+				      <span class="r"> Short</span><input type="range" min="0" max="100" step="5" value="50" id="height" name="height"><span class="p">Tall</span> <br>
+                 <label class=" l" for="salary">Salary: </label>
+                       <span class="r">Poor</span><input type="range" min="0" max="100" step="5" value="50" id="salary" name="salary"><span class="p">Rich</span><br>
+</fieldset>					   
+
+<fieldset class="fs">
+         <legend>Your Contact Information </legend>
+		        <label class="l" for="email">Email: </label>
+		              <input type="email" name="email" id="email" required><br>
+		        <label class="l" for="mobile">Mobile: </label>
+				      <input type="tel" name="mobile" id="tel"><br>
+				<label class="l" for="address">Address: </label>
+                      <textarea class="t" name="address">
+                      </textarea><br>
+				<label class="cr" for="contact">Method To Contact You: </label>
+                      <input type="checkbox" name="email" id="contact" value="Email">Email	
+                      <input type="checkbox" name="whatsapp" id="contact" value="Whatsapp">Whatsapp
+                      <input type="checkbox" name="inappchat" id="contact" value="In-app chat">In-app Chat<br>
+</fieldset>
+				<br>	  
+<input type="submit" value="Submit">		 
+
+</form>
+</body>
+</html>
+
